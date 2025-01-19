@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --background-design: #cfcfcf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --background-design: #333333;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  background-image:  linear-gradient(var(--background-design) 2px, transparent 2px), linear-gradient(90deg, var(--background-design)  2px, transparent 2px), linear-gradient(var(--background-design)  1px, transparent 1px), linear-gradient(90deg, var(--background-design)  1px, var(--background) 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+
